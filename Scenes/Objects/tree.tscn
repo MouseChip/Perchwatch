@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://dynhf3t6wxioj"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/Tree.cs" id="1_ghll1"]
+[ext_resource type="Texture2D" uid="uid://1yoa1qu3fsvr" path="res://Assets/Graphics/Placeholder/icon.svg" id="1_wo060"]
+[ext_resource type="Script" path="res://Scripts/Input/TreeClick.cs" id="3_qrpxu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3n6s1"]
+radius = 66.0
+height = 132.0
+
+[node name="treeObject" type="Node2D"]
+script = ExtResource("1_ghll1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wo060")
+
+[node name="Body" type="Area2D" parent="."]
+script = ExtResource("3_qrpxu")
+
+[node name="Hitbox" type="CollisionShape2D" parent="Body"]
+shape = SubResource("CapsuleShape2D_3n6s1")

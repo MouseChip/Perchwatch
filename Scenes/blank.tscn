@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0s36u0chhksm"]
+
+[ext_resource type="PackedScene" uid="uid://dynhf3t6wxioj" path="res://Scenes/Objects/tree.tscn" id="1_x6jwq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="treeObject" parent="." instance=ExtResource("1_x6jwq")]
+position = Vector2(54.3784, 36.4525)
+clickSceneDir = "yard_scene"
