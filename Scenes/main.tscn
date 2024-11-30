@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwprumm7sa5eh"]
+
+[ext_resource type="PackedScene" uid="uid://cg7lkcqwdsvla" path="res://Scenes/yard_scene.tscn" id="1_jq4rb"]
+
+[node name="main" type="Node"]
+
+[node name="yardScene" parent="." instance=ExtResource("1_jq4rb")]
